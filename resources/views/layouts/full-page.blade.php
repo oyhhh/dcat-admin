@@ -33,9 +33,11 @@
 
 {{-- 页面埋点 --}}
 {!! admin_section(Dcat\Admin\Admin::SECTION['BODY_INNER_BEFORE']) !!}
-
+@if(request('page_type',0)==1)
+    @include('admin::partials.navbar')
+@endif
 <div class="app-content content">
-    <div class="wrapper" id="{{ $pjaxContainerId }}">
+    <div class="wrapper" id="{{ $pjaxContainerId }}" @if(request('page_type',0)==1) style="padding-top: 60px" @endif>
         @yield('app')
     </div>
 </div>

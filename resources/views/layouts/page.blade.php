@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge">
     {{-- 默认使用谷歌浏览器内核--}}
     <meta name="renderer" content="webkit">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+{{--    <meta name="viewport" content="width=device-width,initial-scale=1.0">--}}
 
     <title>{{ Dcat\Admin\Admin::title() }} @if(! empty($header)) | {{ $header }}@endif</title>
 
